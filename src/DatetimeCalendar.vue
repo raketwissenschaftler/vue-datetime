@@ -102,7 +102,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .vdatetime-calendar__navigation,
 .vdatetime-calendar__navigation * {
   box-sizing: border-box;
@@ -126,8 +126,10 @@ export default {
   & svg {
     width: 8px;
 
-    & path {
-      transition: stroke .3s;
+    @supports (-ms-ime-align: auto) {
+      & path {
+        transition: stroke .3s;
+      }
     }
   }
 
