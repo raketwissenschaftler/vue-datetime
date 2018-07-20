@@ -125,12 +125,6 @@ export default {
 
   & svg {
     width: 8px;
-
-    @supports (-ms-ime-align: auto) {
-      & path {
-        transition: stroke .3s;
-      }
-    }
   }
 
   &:hover svg path {
